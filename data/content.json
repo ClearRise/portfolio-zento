@@ -1,0 +1,277 @@
+{
+  "site": {
+    "brand": "ZENTO.",
+    "brandShort": "Z.",
+    "title": "Building Your Digital Vision",
+    "titleMobile1": "Building Your",
+    "titleMobile2": "Digital Vision",
+    "subtitle": "Innovation in Every Pixel",
+    "metaTitle": "ZENTO | Building your digital vision",
+    "metaName": "ZENTO | Designer + Engineer",
+    "metaDescription": "動きと体験設計を得意とするデザイナー兼エンジニア、ZENTOのポートフォリオサイトです。"
+  },
+  "profile": {
+    "photo": "./assets/image/picture-2.webp",
+    "about": "こんにちは。ZENTOです。\nデザインとテクノロジーを横断するWebデザイナー兼エンジニアとして、7年以上にわたりさまざまなデジタルプロジェクトに携わってきました。\n美術大学で培ったデザイン思考を軸に、Webデザイン、コーディング、システム開発、業務自動化、AIの活用まで幅広く対応しています。\n私の強みは、アイデアやビジョンを、実際に動くデジタル体験へ落とし込むこと。見た目の美しさだけでなく、使いやすさや成果にもこだわり、デザインと技術の両面から課題解決を支えます。\nまだ言葉になっていない構想や、ぼんやりとしたイメージでも構いません。対話を重ねながら本質的な価値を見つけ出し、魅力あるWebサイトやサービスとして形にしていきます。"
+  },
+  "marquee": [
+    "Interactive Experiences",
+    "Creative Vision",
+    "High-Performance Websites",
+    "Creates Endless Possibilities"
+  ],
+  "works": [
+    {
+      "id": "manten",
+      "name": "Manten",
+      "project": "manten",
+      "type": "Corporate / Real Estate",
+      "desc": "広島県を拠点とする不動産会社のコーポレートサイトを制作。売買・賃貸・仲介・管理・不動産コンサルティングなどの事業内容を整理し、会社の強みや実績、住宅ローン相談、購入・売却に関する情報を分かりやすく伝えられる構成に仕上げました。",
+      "role": "Web Developer",
+      "year": 2025,
+      "link": "https://manten.info/",
+      "color1": "#cecb8c",
+      "color1Rgb": {
+        "r": 205,
+        "g": 203,
+        "b": 147
+      },
+      "color2": "#5b86f7",
+      "color2Rgb": {
+        "r": 100,
+        "g": 133,
+        "b": 239
+      },
+      "subColor": "#5b86f7",
+      "preview": "./assets/image/manten/preview.png",
+      "homeMac": "./assets/image/manten/homeMac.png"
+    },
+    {
+      "id": "house-labo",
+      "name": "House Labo",
+      "project": "house-labo",
+      "type": "Corporate / Service",
+      "desc": "福島県郡山市を拠点とする住宅リフォーム会社のコーポレートサイトを制作。増改築・屋根・外壁・水回り・内装・耐震工事など幅広いサービスを分かりやすく整理し、施工実績や対応エリア、問い合わせまでスムーズにつながる構成に設計しました。",
+      "role": "Web Developer",
+      "year": 2025,
+      "link": "https://house-labo-k.com/",
+      "color1": "#f2ff00",
+      "color1Rgb": {
+        "r": 242,
+        "g": 255,
+        "b": 0
+      },
+      "color2": "#0048ff",
+      "color2Rgb": {
+        "r": 28,
+        "g": 71,
+        "b": 245
+      },
+      "subColor": "#0048ff",
+      "preview": "./assets/image/house-labo/preview.png",
+      "homeMac": "./assets/image/house-labo/homeMac.png"
+    },
+    {
+      "id": "chouchou",
+      "name": "CHOUCHOU",
+      "project": "chouchou",
+      "type": "Salon / Service",
+      "desc": "大阪・心斎橋の美容室「chouchou」のWebサイトを制作。サロンのコンセプトをはじめ、ヘアスタイル、カラーコレクション、スタッフ、メニュー、クーポンなどの情報を整理し、店舗の世界観とサービスの魅力が伝わるサイトに仕上げました。",
+      "role": "Web Developer",
+      "year": 2024,
+      "link": "https://www.chouchou-tk.com/",
+      "color1": "#b4917d",
+      "color1Rgb": {
+        "r": 174,
+        "g": 146,
+        "b": 128
+      },
+      "color2": "#ffffff",
+      "color2Rgb": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "subColor": "#e497af",
+      "preview": "./assets/image/chouchou/preview.png",
+      "homeMac": "./assets/image/chouchou/homeMac.jpeg"
+    },
+    {
+      "id": "pyuru",
+      "name": "PYURU",
+      "project": "pyuru",
+      "type": "Corporate / Beauty",
+      "desc": "福岡県糸島市に自社工場を持つ化粧品OEM・ODMメーカー、株式会社ピュールのコーポレートサイトを制作。OEM・ODM開発、製品一覧、開発事例、研究開発・品質保証、生産体制などの情報を整理し、企業としての技術力やブランドコンセプトを伝えられる構成に設計しました。",
+      "role": "Web Developer",
+      "year": 2025,
+      "link": "https://www.pyuru.co.jp/",
+      "color1": "#4175ec",
+      "color1Rgb": {
+        "r": 65,
+        "g": 117,
+        "b": 236
+      },
+      "color2": "#ffffff",
+      "color2Rgb": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "subColor": "#4175ec",
+      "preview": "./assets/image/pyuru/preview.png",
+      "homeMac": "./assets/image/pyuru/homeMac.jpeg"
+    },
+    {
+      "id": "onozu",
+      "name": "onozu™",
+      "project": "onozu",
+      "type": "Creative / Corporate",
+      "desc": "ブランディングと建築を横断して手掛けるデザインスタジオ「onozu™」のWebサイトを制作。建築・ブランド・空間・アートなど多様なプロジェクトをビジュアル中心に紹介し、スタジオ独自の世界観やクリエイティブ性が伝わる構成に仕上げました。",
+      "role": "Web Developer",
+      "year": 2024,
+      "link": "https://onozu.jp/",
+      "color1": "#ea3af7",
+      "color1Rgb": {
+        "r": 234,
+        "g": 60,
+        "b": 244
+      },
+      "color2": "#ec612a",
+      "color2Rgb": {
+        "r": 236,
+        "g": 97,
+        "b": 42
+      },
+      "subColor": "#330576",
+      "preview": "./assets/image/onozu/preview.png",
+      "homeMac": "./assets/image/onozu/homeMac.png"
+    },
+    {
+      "id": "laletter",
+      "name": "Laletter",
+      "project": "laletter",
+      "type": "Brand / Beauty",
+      "desc": "サロン専売スキンケアブランド「La Letter」のブランドサイトを制作。ブランドコンセプトや開発ストーリー、商品ラインナップ、ターゲットユーザーへの訴求を整理し、商品の世界観を大切にしながらオンラインショップへの導線まで設計しました。",
+      "role": "Web Developer",
+      "year": 2023,
+      "link": "https://bullbay-laletter.com/",
+      "color1": "#5274f6",
+      "color1Rgb": {
+        "r": 82,
+        "g": 116,
+        "b": 246
+      },
+      "color2": "#ffffff",
+      "color2Rgb": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "subColor": "#5274f6",
+      "preview": "./assets/image/laletter/preview.png",
+      "homeMac": "./assets/image/laletter/homeMac.jpeg"
+    },
+    {
+      "id": "ogiya-wedding",
+      "name": "OGIYA WEDDING SALON",
+      "project": "ogiya-wedding",
+      "type": "Wedding / Service",
+      "desc": "姫路のウェディングサロン「OGIYA WEDDING SALON」のWebサイトを制作。ウェディングドレス・和装・タキシード・アクセサリーなどの衣裳情報に加え、コンセプトや提携式場、FAQ、サロン情報まで整理し、特別な一着との出会いを感じられる上品なサイトに仕上げました。",
+      "role": "Web Developer",
+      "year": 2026,
+      "link": "https://ogiya-wedding.jp/",
+      "color1": "#cccccc",
+      "color1Rgb": {
+        "r": 204,
+        "g": 204,
+        "b": 204
+      },
+      "color2": "#ffffff",
+      "color2Rgb": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "subColor": "#cccccc",
+      "preview": "./assets/image/ogiya-wedding/preview.png",
+      "homeMac": "./assets/image/ogiya-wedding/homeMac.jpeg"
+    },
+    {
+      "id": "ace-industry",
+      "name": "ACE INDUSTRY",
+      "project": "ace-industry",
+      "type": "Corporate / Manufacturing",
+      "desc": "宮城県気仙沼市の縫製・OEMメーカー「エース産業」のコーポレートサイトを制作。国内生産へのこだわりや高難度の縫製技術、OEM事業、オリジナル製品の開発などを整理し、長年培ってきた技術力とMade in Japanの強みが伝わる構成に設計しました。",
+      "role": "Web Developer",
+      "year": 2026,
+      "link": "https://ace-industry.co.jp/",
+      "color1": "#cccccc",
+      "color1Rgb": {
+        "r": 204,
+        "g": 204,
+        "b": 204
+      },
+      "color2": "#ffffff",
+      "color2Rgb": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "subColor": "#cccccc",
+      "preview": "./assets/image/ace-industry/preview.png",
+      "homeMac": "./assets/image/ace-industry/homeMac.jpeg"
+    }
+  ],
+  "homeContact": {
+    "title": "Let's work together",
+    "paragraph": "次の大きなアイデアを、一緒に現実にしましょう。",
+    "button": "Connect with Me"
+  },
+  "contact": {
+    "headline1": "Let's Work",
+    "headline2": "together!",
+    "subcopy": "we'll create something extraordinary!",
+    "email": "seniordev745@gmail.com",
+    "phone": "+86 13305969555",
+    "location": "Remote from Japan",
+    "coordinates": "37° 29′ 36″ N / 139° 55′ 50″ E",
+    "status": "Available"
+  },
+  "socials": {
+    "twitter": "https://twitter.com/Kusou1_",
+    "linkedin": "https://www.linkedin.com/in/lewis-zhang-9bb26b202/",
+    "github": "https://github.com/Kusou1",
+    "email": "mailto:hello@lewiszhang.dev"
+  },
+  "footer": {
+    "slogan": "Creative Digital Experiences",
+    "copyright": "©2024 ZENTO. Creative Engineer",
+    "brand": "ZENTO"
+  },
+  "ui": {
+    "menu": "Menu",
+    "back": "Back.",
+    "home": "Home",
+    "work": "Work",
+    "contact": "Contact",
+    "recentWork": "Recent Work",
+    "clickDetail": "Click screen to view detail.",
+    "role": "Role",
+    "year": "Year",
+    "exploreSite": "Explore Live Website",
+    "discoverMore": "discover more projects",
+    "localTime": "Local Time",
+    "currentStatus": "Current Status",
+    "remoteFrom": "Remote from",
+    "locationShort": "Fukushima, Japan",
+    "preloaderRole": "Web Developer",
+    "twitter": "Twitter/X",
+    "linkedin": "Linkedin",
+    "github": "Github",
+    "email": "Email",
+    "workMetaTitle": "Work | ZENTO",
+    "workMetaName": "ZENTO | My Projects",
+    "contactMetaTitle": "Contact | ZENTO",
+    "contactMetaName": "ZENTO | Let's Work Together"
+  }
+}

@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /port/
+
+  # Serve existing files and folders as-is (js, css, models, images, etc.)
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # All other routes (e.g. /port/work, /port/contact) → SPA entry
+  RewriteRule ^ index.html [L]
+</IfModule>

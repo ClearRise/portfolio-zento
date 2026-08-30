@@ -1,0 +1,21 @@
+{
+  "name": "zeta-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch server/index.js",
+    "dev:admin": "npm run dev --prefix admin",
+    "build": "npm run build --prefix admin",
+    "start": "node server/index.js",
+    "install:all": "npm install && npm install --prefix admin"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "multer": "^1.4.5-lts.1"
+  }
+}
