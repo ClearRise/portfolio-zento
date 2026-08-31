@@ -71,7 +71,7 @@
         localTime: "Local Time",
         currentStatus: "Current Status",
         remoteFrom: "Remote from",
-        locationShort: "Fukushima, Japan",
+        locationShort: "Ishikawa, Japan",
         preloaderRole: "Web Developer",
         twitter: "Twitter/X",
         linkedin: "Linkedin",

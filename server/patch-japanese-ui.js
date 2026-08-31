@@ -155,9 +155,9 @@ replaceOnce(
   'children: (window.__PORTFOLIO__?.ui?.remoteFrom) || "拠点"',
 );
 replaceOnce(
-  "nav fukushima",
-  'children: "Fukushima, Japan"',
-  'children: (window.__PORTFOLIO__?.ui?.locationShort) || "福島、日本"',
+  "nav ishikawa",
+  'children: "Ishikawa, Japan"',
+  'children: (window.__PORTFOLIO__?.ui?.locationShort) || "石川、日本"',
 );
 
 // Nav letter links — Home / Work / Contact spans in nav
