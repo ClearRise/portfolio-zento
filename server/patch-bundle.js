@@ -120,7 +120,7 @@ replaceOnce(
 replaceOnce(
   "twitter href",
   'href: "https://twitter.com/Kusou1_",',
-  'href: (window.__PORTFOLIO__?.socials?.twitter) || "https://twitter.com/Kusou1_",',
+  'href: (window.__PORTFOLIO__?.socials?.twitter) || "https://www.lancers.jp/profile/bunoketta",',
 );
 
 replaceOnce(

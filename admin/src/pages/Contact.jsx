@@ -104,12 +104,13 @@ export default function Contact({ content, setContent }) {
       <section className="panel">
         <h2>Social links</h2>
         <div className="field">
-          <label>Twitter / X</label>
+          <label>Lancers</label>
           <input
             value={socials.twitter || ""}
             onChange={(e) =>
               setPath(content, setContent, "socials.twitter", e.target.value)
             }
+            placeholder="https://www.lancers.jp/profile/..."
           />
         </div>
         <div className="field">

@@ -62777,16 +62777,16 @@ function Zue() {
                     O.jsx("a", {
                       className: "social-line",
                       target: "_blank",
-                      href: (window.__PORTFOLIO__?.socials?.twitter) || "https://twitter.com/Kusou1_",
+                      href: (window.__PORTFOLIO__?.socials?.twitter) || "https://www.lancers.jp/profile/bunoketta",
                       "data-animation": "link",
                       onClick: () => {
                         Bl.event({
                           category: "link",
                           action: "click",
-                          label: "Twitter/X Click",
+                          label: "Lancers Click",
                         });
                       },
-                      children: O.jsx("span", { children: (window.__PORTFOLIO__?.ui?.twitter) || "X" }),
+                      children: O.jsx("span", { children: (window.__PORTFOLIO__?.ui?.twitter) || "Lancers" }),
                     }),
                     O.jsx("a", {
                       className: "social-line",

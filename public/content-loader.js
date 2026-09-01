@@ -46,7 +46,7 @@
         status: "Available",
       },
       socials: {
-        twitter: "#",
+        twitter: "https://www.lancers.jp/profile/bunoketta",
         linkedin: "#",
         github: "#",
         email: "mailto:",
@@ -73,7 +73,7 @@
         remoteFrom: "Remote from",
         locationShort: "Ishikawa, Japan",
         preloaderRole: "Web Developer",
-        twitter: "Twitter/X",
+        twitter: "Lancers",
         linkedin: "Linkedin",
         github: "Github",
         email: "Email",
