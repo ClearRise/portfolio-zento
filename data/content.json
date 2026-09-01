@@ -10,6 +10,9 @@
     "metaName": "ZENTO | Designer + Engineer",
     "metaDescription": "動きと体験設計を得意とするデザイナー兼エンジニア、ZENTOのポートフォリオサイトです。"
   },
+  "preloader": {
+    "brandName": "ZENTO"
+  },
   "profile": {
     "photo": "./assets/image/picture-2.webp",
     "about": "こんにちは。ZENTOです。\nデザインとテクノロジーを横断するWebデザイナー兼エンジニアとして、7年以上にわたりさまざまなデジタルプロジェクトに携わってきました。\n美術大学で培ったデザイン思考を軸に、Webデザイン、コーディング、システム開発、業務自動化、AIの活用まで幅広く対応しています。\n私の強みは、アイデアやビジョンを、実際に動くデジタル体験へ落とし込むこと。見た目の美しさだけでなく、使いやすさや成果にもこだわり、デザインと技術の両面から課題解決を支えます。\nまだ言葉になっていない構想や、ぼんやりとしたイメージでも構いません。対話を重ねながら本質的な価値を見つけ出し、魅力あるWebサイトやサービスとして形にしていきます。"
@@ -235,13 +238,29 @@
     "phone": "+86 13305969555",
     "location": "Remote from Japan",
     "coordinates": "37° 29′ 36″ N / 139° 55′ 50″ E",
-    "status": "Available"
+    "status": "Available",
+    "mailSubject": "はじめまして。"
+  },
+  "contactForm": {
+    "heading1": "Fill this out and we'll get back to you as soon as we can..",
+    "heading2": "Open to any and all opportunities.",
+    "placeholderName": "First & Last Name",
+    "placeholderCompany": "Company",
+    "placeholderEmail": "Email",
+    "placeholderPhone": "Phone",
+    "placeholderMessage": "Project details...",
+    "submitLabel": "Send",
+    "successMessage": "Thank you for your message!!",
+    "errorMessage": "Something went wrong, please try again later",
+    "invalidEmail": "Please enter a valid email address",
+    "invalidPhone": "Please enter a valid phone number"
   },
   "socials": {
     "twitter": "https://www.lancers.jp/profile/bunoketta",
     "linkedin": "https://www.linkedin.com/in/lewis-zhang-9bb26b202/",
     "github": "https://github.com/Kusou1",
-    "email": "mailto:hello@lewiszhang.dev"
+    "email": "mailto:hello@lewiszhang.dev",
+    "chatwork": ""
   },
   "footer": {
     "slogan": "Creative Digital Experiences",
@@ -256,6 +275,7 @@
     "contact": "Contact",
     "recentWork": "Recent Work",
     "clickDetail": "Click screen to view detail.",
+    "workIntro": "Introduction",
     "role": "Role",
     "year": "Year",
     "exploreSite": "Explore Live Website",
@@ -271,7 +291,9 @@
     "email": "Email",
     "workMetaTitle": "Work | ZENTO",
     "workMetaName": "ZENTO | My Projects",
+    "workMetaDescription": "ZENTO | My Projects",
     "contactMetaTitle": "Contact | ZENTO",
-    "contactMetaName": "ZENTO | Let's Work Together"
+    "contactMetaName": "ZENTO | Let's Work Together",
+    "contactMetaDescription": "Contact Page | Contact me to create something extraordinary! How can we help you?"
   }
 }

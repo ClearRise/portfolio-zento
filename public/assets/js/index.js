@@ -80126,7 +80126,7 @@ function Wz() {
             O.jsx("meta", { name: "name", content: (window.__PORTFOLIO__?.ui?.workMetaTitle) || "作品 | ZENTO" }),
             O.jsx("meta", {
               name: "description",
-              content: (window.__PORTFOLIO__?.ui?.workMetaName) || "ZENTO | 作品一覧",
+              content: (window.__PORTFOLIO__?.ui?.workMetaDescription) || (window.__PORTFOLIO__?.ui?.workMetaName) || "ZENTO | My Projects",
             }),
           ],
         }),
@@ -80301,7 +80301,7 @@ function Wz() {
                             className: "p",
                             "data-animation": "enter",
                             style: { color: S.subColor },
-                            children: "Intoduction",
+                            children: (window.__PORTFOLIO__?.ui?.workIntro) || "Introduction",
                           }),
                           O.jsx("div", {
                             className: "projectDesc",
@@ -92176,22 +92176,22 @@ function PMe() {
     g = () => {
       wS.email(s)
         ? (i(""), u(!1))
-        : (u(!0), i("Please enter a valid email address"));
+        : (u(!0), i((window.__PORTFOLIO__?.contactForm?.invalidEmail) || "Please enter a valid email address"));
     },
     y = () => {
       wS.phone(a)
         ? (i(""), d(!1))
-        : (d(!0), i("Please enter a valid phone number"));
+        : (d(!0), i((window.__PORTFOLIO__?.contactForm?.invalidPhone) || "Please enter a valid phone number"));
     },
     _ = (x) => {
       (x.persist(),
         x.preventDefault(),
         wS.email(s)
           ? (i(""), u(!1))
-          : (u(!0), i("Please enter a valid email address")),
+          : (u(!0), i((window.__PORTFOLIO__?.contactForm?.invalidEmail) || "Please enter a valid email address")),
         wS.phone(a)
           ? (i(""), d(!1))
-          : (d(!0), i("Please enter a valid phone number")),
+          : (d(!0), i((window.__PORTFOLIO__?.contactForm?.invalidPhone) || "Please enter a valid phone number")),
         !c &&
           !f &&
           (t(!0),
@@ -92202,7 +92202,7 @@ function PMe() {
             "sZaO3Zj59nj8RBD0n",
           ).then(
             (w) => {
-              (i("Thank you for your message!!"),
+              (i((window.__PORTFOLIO__?.contactForm?.successMessage) || "Thank you for your message!!"),
                 Bl.event({
                   category: "form",
                   action: "submit",
@@ -92216,7 +92216,7 @@ function PMe() {
             },
             (w) => {
               (console.log(w),
-                i("Something went wrong, please try again later"),
+                i((window.__PORTFOLIO__?.contactForm?.errorMessage) || "Something went wrong, please try again later"),
                 t(!1),
                 setTimeout(() => {
                   i(null);
@@ -92236,9 +92236,9 @@ function PMe() {
           children: [
             O.jsx("h1", {
               children:
-                "Fill this out and we'll get back to you as soon as we can..",
+                (window.__PORTFOLIO__?.contactForm?.heading1) || "Fill this out and we'll get back to you as soon as we can..",
             }),
-            O.jsx("h1", { children: "Open to any and all opportunities." }),
+            O.jsx("h1", { children: (window.__PORTFOLIO__?.contactForm?.heading2) || "Open to any and all opportunities." }),
           ],
         }),
         O.jsxs("div", {
@@ -92249,14 +92249,14 @@ function PMe() {
               children: [
                 O.jsx("input", {
                   type: "text",
-                  placeholder: "First & Last Name",
+                  placeholder: (window.__PORTFOLIO__?.contactForm?.placeholderName) || "First & Last Name",
                   className: "txt-field is-half",
                   name: "user_name",
                   required: !0,
                 }),
                 O.jsx("input", {
                   type: "text",
-                  placeholder: "Company",
+                  placeholder: (window.__PORTFOLIO__?.contactForm?.placeholderCompany) || "Company",
                   className: "txt-field is-half",
                   name: "user_company",
                   required: !0,
@@ -92268,7 +92268,7 @@ function PMe() {
               children: [
                 O.jsx("input", {
                   type: "email",
-                  placeholder: "Email",
+                  placeholder: (window.__PORTFOLIO__?.contactForm?.placeholderEmail) || "Email",
                   className: "txt-field is-half",
                   name: "user_email",
                   onChange: p,
@@ -92277,7 +92277,7 @@ function PMe() {
                 }),
                 O.jsx("input", {
                   type: "tel",
-                  placeholder: "Phone",
+                  placeholder: (window.__PORTFOLIO__?.contactForm?.placeholderPhone) || "Phone",
                   className: "txt-field is-half",
                   name: "user_phone",
                   onChange: v,
@@ -92287,7 +92287,7 @@ function PMe() {
               ],
             }),
             O.jsx("textarea", {
-              placeholder: "Project details...",
+              placeholder: (window.__PORTFOLIO__?.contactForm?.placeholderMessage) || "Project details...",
               className: "txt-field is-full is-msg",
               maxLength: 5e3,
               name: "message",
@@ -92296,7 +92296,7 @@ function PMe() {
             O.jsx("button", {
               className: "button",
               disabled: e,
-              children: "Send",
+              children: (window.__PORTFOLIO__?.contactForm?.submitLabel) || "Send",
             }),
           ],
         }),
@@ -92371,8 +92371,7 @@ function LMe() {
                 }),
                 O.jsx("meta", {
                   name: "description",
-                  content:
-                    "Contact Page | Contact me to create something extraordinary!How can we help you?",
+                  content: (window.__PORTFOLIO__?.ui?.contactMetaDescription) || "Contact Page | Contact me to create something extraordinary! How can we help you?",
                 }),
               ],
             }),
@@ -93476,7 +93475,7 @@ function VMe() {
                   //     children: "+86 13305969555",
                   //   }),
                   //   O.jsx("a", {
-                  //     href: "mailto:seniordev745@gmail.com?subject=はじめまして。",
+                  //     href: "mailto:seniordev745@gmail.com?subject=" + encodeURIComponent((window.__PORTFOLIO__?.contact?.mailSubject) || "はじめまして。") + "",
                   //     target: "_blank",
                   //     children: "seniordev745@gmail.com",
                   //   }),
@@ -93491,7 +93490,7 @@ function VMe() {
                       children: O.jsx("div", {
                         className: "social-sticky-box",
                         children: O.jsx("a", {
-                          href: "mailto:" + ((window.__PORTFOLIO__?.contact?.email) || "seniordev745@gmail.com") + "?subject=はじめまして。",
+                          href: "mailto:" + ((window.__PORTFOLIO__?.contact?.email) || "seniordev745@gmail.com") + "?subject=" + encodeURIComponent((window.__PORTFOLIO__?.contact?.mailSubject) || "はじめまして。"),
                           target: "_blank",
                           className: "social-link",
                           ref: c,
@@ -93509,7 +93508,7 @@ function VMe() {
                       children: O.jsx("div", {
                         className: "social-sticky-box",
                         children: O.jsx("a", {
-                          href: "#",
+                          href: (window.__PORTFOLIO__?.socials?.chatwork) || "#",
                           target: "_blank",
                           className: "social-link",
                           ref: u,
@@ -93682,7 +93681,7 @@ function $Me({ theme: n = "dark" }) {
               children: O.jsx("div", {
                 className: "pad-left-inner",
                 ref: s,
-                children: "ZENTO",
+                children: (window.__PORTFOLIO__?.preloader?.brandName) || "ZENTO",
               }),
             }),
             O.jsx("div", { className: "border-line", ref: a }),

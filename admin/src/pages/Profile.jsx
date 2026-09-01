@@ -1,19 +1,12 @@
 import { useState } from "react";
 import { assetUrl, uploadFile } from "../api.js";
-
-function setPath(content, setContent, path, value) {
-  const next = structuredClone(content);
-  const keys = path.split(".");
-  let cur = next;
-  for (let i = 0; i < keys.length - 1; i++) cur = cur[keys[i]];
-  cur[keys[keys.length - 1]] = value;
-  setContent(next);
-}
+import { Field, TextInput, setPath } from "../lib/content.jsx";
 
 export default function Profile({ content, setContent }) {
   const [msg, setMsg] = useState("");
   const site = content.site || {};
   const profile = content.profile || {};
+  const preloader = content.preloader || {};
   const marquee = content.marquee || [];
 
   async function onPhoto(e) {
@@ -36,63 +29,99 @@ export default function Profile({ content, setContent }) {
       <section className="panel">
         <h2>Site</h2>
         <div className="row">
-          <div className="field">
-            <label>Brand</label>
-            <input
-              value={site.brand || ""}
+          <Field label="Brand (header)">
+            <TextInput
+              value={site.brand}
               onChange={(e) =>
                 setPath(content, setContent, "site.brand", e.target.value)
               }
             />
-          </div>
-          <div className="field">
-            <label>Brand short</label>
-            <input
-              value={site.brandShort || ""}
+          </Field>
+          <Field label="Brand short (footer logo)">
+            <TextInput
+              value={site.brandShort}
               onChange={(e) =>
                 setPath(content, setContent, "site.brandShort", e.target.value)
               }
             />
-          </div>
+          </Field>
         </div>
-        <div className="field">
-          <label>Main title</label>
-          <input
-            value={site.title || ""}
+        <Field label="Main title">
+          <TextInput
+            value={site.title}
             onChange={(e) =>
               setPath(content, setContent, "site.title", e.target.value)
             }
           />
-        </div>
+        </Field>
         <div className="row">
-          <div className="field">
-            <label>Mobile title line 1</label>
-            <input
-              value={site.titleMobile1 || ""}
+          <Field label="Mobile title line 1">
+            <TextInput
+              value={site.titleMobile1}
               onChange={(e) =>
                 setPath(content, setContent, "site.titleMobile1", e.target.value)
               }
             />
-          </div>
-          <div className="field">
-            <label>Mobile title line 2</label>
-            <input
-              value={site.titleMobile2 || ""}
+          </Field>
+          <Field label="Mobile title line 2">
+            <TextInput
+              value={site.titleMobile2}
               onChange={(e) =>
                 setPath(content, setContent, "site.titleMobile2", e.target.value)
               }
             />
-          </div>
+          </Field>
         </div>
-        <div className="field">
-          <label>Subtitle</label>
-          <input
-            value={site.subtitle || ""}
+        <Field label="Subtitle">
+          <TextInput
+            value={site.subtitle}
             onChange={(e) =>
               setPath(content, setContent, "site.subtitle", e.target.value)
             }
           />
-        </div>
+        </Field>
+      </section>
+
+      <section className="panel">
+        <h2>SEO (home page)</h2>
+        <Field label="Browser title">
+          <TextInput
+            value={site.metaTitle}
+            onChange={(e) =>
+              setPath(content, setContent, "site.metaTitle", e.target.value)
+            }
+          />
+        </Field>
+        <Field label="Meta name">
+          <TextInput
+            value={site.metaName}
+            onChange={(e) =>
+              setPath(content, setContent, "site.metaName", e.target.value)
+            }
+          />
+        </Field>
+        <Field label="Meta description">
+          <textarea
+            value={site.metaDescription || ""}
+            onChange={(e) =>
+              setPath(content, setContent, "site.metaDescription", e.target.value)
+            }
+            style={{ minHeight: 80 }}
+          />
+        </Field>
+      </section>
+
+      <section className="panel">
+        <h2>Preloader (splash screen)</h2>
+        <Field label="Brand name" hint="Shown on the left during loading.">
+          <TextInput
+            value={preloader.brandName}
+            onChange={(e) =>
+              setPath(content, setContent, "preloader.brandName", e.target.value)
+            }
+          />
+        </Field>
+        <p className="hint">Role text is under Labels → Nav panel & status.</p>
       </section>
 
       <section className="panel">
@@ -105,13 +134,11 @@ export default function Profile({ content, setContent }) {
               alt="Profile"
             />
           )}
-          <div className="field" style={{ marginBottom: 0 }}>
-            <label>Profile photo</label>
+          <Field label="Profile photo">
             <input type="file" accept="image/*" onChange={onPhoto} />
-          </div>
+          </Field>
         </div>
-        <div className="field">
-          <label>About</label>
+        <Field label="About">
           <textarea
             value={profile.about || ""}
             onChange={(e) =>
@@ -119,15 +146,14 @@ export default function Profile({ content, setContent }) {
             }
             style={{ minHeight: 180 }}
           />
-        </div>
+        </Field>
         {msg && <p className="status ok">{msg}</p>}
       </section>
 
       <section className="panel">
         <h2>Marquee</h2>
         <p className="hint">One phrase per line.</p>
-        <div className="field">
-          <label>Phrases</label>
+        <Field label="Phrases">
           <textarea
             value={marquee.join("\n")}
             onChange={(e) => {
@@ -139,22 +165,20 @@ export default function Profile({ content, setContent }) {
               setContent(next);
             }}
           />
-        </div>
+        </Field>
       </section>
 
       <section className="panel">
         <h2>Home contact block</h2>
-        <div className="field">
-          <label>Title</label>
-          <input
-            value={content.homeContact?.title || ""}
+        <Field label="Title">
+          <TextInput
+            value={content.homeContact?.title}
             onChange={(e) =>
               setPath(content, setContent, "homeContact.title", e.target.value)
             }
           />
-        </div>
-        <div className="field">
-          <label>Paragraph</label>
+        </Field>
+        <Field label="Paragraph">
           <textarea
             value={content.homeContact?.paragraph || ""}
             onChange={(e) =>
@@ -166,16 +190,15 @@ export default function Profile({ content, setContent }) {
               )
             }
           />
-        </div>
-        <div className="field">
-          <label>Button label</label>
-          <input
-            value={content.homeContact?.button || ""}
+        </Field>
+        <Field label="Button label">
+          <TextInput
+            value={content.homeContact?.button}
             onChange={(e) =>
               setPath(content, setContent, "homeContact.button", e.target.value)
             }
           />
-        </div>
+        </Field>
       </section>
     </>
   );
