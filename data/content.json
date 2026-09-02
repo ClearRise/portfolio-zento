@@ -231,21 +231,21 @@
     "headline1": "Let's Work",
     "headline2": "together!",
     "subcopy": "we'll create something extraordinary!",
-    "email": "seniordev745@gmail.com",
-    "phone": "+86 13305969555",
+    "email": "buno81531@gmail.com",
+    "phone": "+81 80 9782 2691",
     "location": "Remote from Japan",
-    "coordinates": "37° 29′ 36″ N / 139° 55′ 50″ E",
+    "coordinates": "藤江南2丁目15番地,金沢市,920-0346",
     "status": "Available"
   },
   "socials": {
-    "twitter": "https://twitter.com/Kusou1_",
-    "linkedin": "https://www.linkedin.com/in/lewis-zhang-9bb26b202/",
-    "github": "https://github.com/Kusou1",
-    "email": "mailto:hello@lewiszhang.dev"
+    "twitter": "",
+    "linkedin": "https://www.linkedin.com/in/shinobu-takenami-574998429/",
+    "github": "https://github.com/clearrise",
+    "email": "mailto:markwhistle49@gmail.com"
   },
   "footer": {
     "slogan": "Creative Digital Experiences",
-    "copyright": "©2024 ZENTO. Creative Engineer",
+    "copyright": "©2026 ZENTO. Creative Engineer",
     "brand": "ZENTO"
   },
   "ui": {
@@ -263,7 +263,7 @@
     "localTime": "Local Time",
     "currentStatus": "Current Status",
     "remoteFrom": "Remote from",
-    "locationShort": "Fukushima, Japan",
+    "locationShort": "Ishikawa, Japan",
     "preloaderRole": "Web Developer",
     "twitter": "Twitter/X",
     "linkedin": "Linkedin",

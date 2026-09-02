@@ -93509,7 +93509,7 @@ function VMe() {
                       children: O.jsx("div", {
                         className: "social-sticky-box",
                         children: O.jsx("a", {
-                          href: "#",
+                          href: "https://www.chatwork.com/buno",
                           target: "_blank",
                           className: "social-link",
                           ref: u,
