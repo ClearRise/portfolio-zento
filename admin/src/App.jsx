@@ -5,6 +5,7 @@ import Login from "./pages/Login.jsx";
 import Profile from "./pages/Profile.jsx";
 import Works from "./pages/Works.jsx";
 import Contact from "./pages/Contact.jsx";
+import Labels from "./pages/Labels.jsx";
 
 function Shell({ content, setContent, onLogout }) {
   const [status, setStatus] = useState("");
@@ -42,6 +43,7 @@ function Shell({ content, setContent, onLogout }) {
         </NavLink>
         <NavLink to="/works">Works</NavLink>
         <NavLink to="/contact">Contact</NavLink>
+        <NavLink to="/labels">Labels</NavLink>
         <a href="/" target="_blank" rel="noreferrer">
           View site
         </a>
@@ -63,6 +65,10 @@ function Shell({ content, setContent, onLogout }) {
         <Route
           path="/contact"
           element={<Contact content={content} setContent={setContent} />}
+        />
+        <Route
+          path="/labels"
+          element={<Labels content={content} setContent={setContent} />}
         />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

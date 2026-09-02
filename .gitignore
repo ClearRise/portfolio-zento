@@ -6,6 +6,9 @@ admin/dist/
 # Env
 .env
 
+# CMS content (edited via admin)
+data/content.json
+
 # OS / editor
 .DS_Store
 Thumbs.db
